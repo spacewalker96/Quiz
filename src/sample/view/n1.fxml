@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #efefef;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.n1Controller">
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #efefef;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
    <AnchorPane prefHeight="106.0" prefWidth="700.0" style="-fx-background-color: #fff59d;">
       <children>
          <Label alignment="CENTER" layoutX="294.0" layoutY="19.0" prefHeight="59.0" prefWidth="163.0" text="Niveau 1" textFill="WHITE">
@@ -16,12 +16,12 @@
          </Label>
       </children>
    </AnchorPane>
-   <Label fx:id="score" layoutX="35.0" layoutY="281.0" prefHeight="79.0" prefWidth="140.0" style="-fx-background-color: #bdbdbd;" text="Score :" textFill="WHITE">
+   <Label fx:id="score" layoutX="35.0" layoutY="281.0" prefHeight="79.0" prefWidth="140.0" style="-fx-background-color: #bdbdbd;" text="Score : 0" textFill="WHITE">
       <font>
          <Font size="24.0" />
       </font>
    </Label>
-   <JFXButton id="suivantbtn" fx:id="suivantbtn" layoutX="602.0" layoutY="301.0" onAction="#suivantaction" prefHeight="35.0" prefWidth="95.0" style="-fx-background-color: #fff176;" text="Suivant" textFill="#9b9090">
+   <JFXButton fx:id="suivantbtn" layoutX="602.0" layoutY="301.0" onAction="#startAction2" prefHeight="35.0" prefWidth="95.0" style="-fx-background-color: #fff176;" text="Suivant" textFill="#9b9090">
       <font>
          <Font size="18.0" />
       </font>

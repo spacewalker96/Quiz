@@ -2,9 +2,19 @@ package sample.controller;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXCheckBox;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
 public class n1Controller {
+    int score1 = 0;
+    @FXML
+    private Label score;
     @FXML
     private AnchorPane n1q5;
 
@@ -42,9 +52,6 @@ public class n1Controller {
     @FXML
     private JFXCheckBox correct;
 
-    @FXML
-    private Label score;
-
     private int s = 0;
     @FXML
     void q1() {
@@ -72,10 +79,26 @@ public class n1Controller {
        if(correct.selectedProperty())
     }*/
 
-    public void suivantaction() {
+   /* public void startAction2() {
 
         }
+*/
 
+    //public void startAction(javafx.event.ActionEvent actionEvent) throws IOException {
+    @FXML
+    private void startAction2() throws IOException {
+        suivantbtn.getScene().getWindow().hide();
+        Parent root;
+        root = FXMLLoader.load(getClass().getResource("/sample/view/n2.fxml"));
+        Stage n2 = new Stage();
+        n2.setTitle("Niveau 2");
+        Scene scene = new Scene(root);
+        n2.setScene(scene);
+        n2.show();
+        n2.setResizable(false);
+        score.setText("vcbnb");
+
+    }
     }
 
 

@@ -16,7 +16,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <JFXButton fx:id="startButton" layoutX="274.0" layoutY="176.0" onAction="#startAction" prefHeight="47.0" prefWidth="152.0" style="-fx-background-color: #cbc26d;" text="Start The Game" textFill="WHITE">
+      <JFXButton fx:id="startButton" layoutX="274.0" layoutY="176.0" onAction="#startAction1" prefHeight="47.0" prefWidth="152.0" style="-fx-background-color: #cbc26d;" text="Start The Game" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
