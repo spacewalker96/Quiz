@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #efefef;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.n1Controller">
+   <AnchorPane prefHeight="106.0" prefWidth="700.0" style="-fx-background-color: #fff59d;">
+      <children>
+         <Label alignment="CENTER" layoutX="294.0" layoutY="19.0" prefHeight="59.0" prefWidth="163.0" text="Niveau 1" textFill="WHITE">
+            <font>
+               <Font size="36.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+   <Label fx:id="score" layoutX="35.0" layoutY="281.0" prefHeight="79.0" prefWidth="140.0" style="-fx-background-color: #bdbdbd;" text="Score :" textFill="WHITE">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <JFXButton id="suivantbtn" fx:id="suivantbtn" layoutX="602.0" layoutY="301.0" onAction="#suivantaction" prefHeight="35.0" prefWidth="95.0" style="-fx-background-color: #fff176;" text="Suivant" textFill="#9b9090">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </JFXButton>
+   <AnchorPane fx:id="n1q5" layoutX="176.0" layoutY="141.0" prefHeight="245.0" prefWidth="422.0" style="-fx-background-color: #efefef;">
+      <children>
+         <Label alignment="CENTER" layoutX="114.0" layoutY="14.0" prefHeight="45.0" prefWidth="95.0" text="Question 5" textFill="#fdd835">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="8.0" layoutY="55.0" prefHeight="39.0" prefWidth="389.0" text="Dans la ligne &quot;public class A implements B&quot;, Best :" />
+         <JFXCheckBox layoutX="79.0" layoutY="114.0" text="Interfacce" />
+         <JFXCheckBox layoutX="79.0" layoutY="157.0" text="Classe parent" />
+         <JFXCheckBox layoutX="79.0" layoutY="196.0" prefHeight="18.0" prefWidth="212.0" text="Package" />
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="n1q4" layoutX="185.0" layoutY="120.0" prefHeight="236.0" prefWidth="397.0" style="-fx-background-color: #efefef;">
+      <children>
+         <Label alignment="CENTER" layoutX="114.0" layoutY="14.0" prefHeight="45.0" prefWidth="95.0" text="Question 4" textFill="#fdd835">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="8.0" layoutY="55.0" prefHeight="39.0" prefWidth="389.0" text="Est-ce que on peut avoir plusieurs constructeurspour la même classe " />
+         <JFXCheckBox layoutX="79.0" layoutY="114.0" text="Oui" />
+         <JFXCheckBox layoutX="79.0" layoutY="157.0" text="Non" />
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="n1q3" layoutX="177.0" layoutY="120.0" prefHeight="236.0" prefWidth="405.0" style="-fx-background-color: #efefef;">
+      <Label alignment="CENTER" layoutX="114.0" layoutY="14.0" prefHeight="45.0" prefWidth="95.0" text="Question 3" textFill="#fdd835">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="55.0" prefHeight="39.0" prefWidth="389.0" text="Par convention une classe" />
+      <JFXCheckBox layoutX="79.0" layoutY="114.0" text="est en minuscule" />
+      <JFXCheckBox layoutX="79.0" layoutY="157.0" text="commence par une majuscule" />
+      <JFXCheckBox layoutX="79.0" layoutY="196.0" prefHeight="18.0" prefWidth="212.0" text="est en majuscules" />
+   </AnchorPane>
+   <AnchorPane fx:id="n1q2" layoutX="179.0" layoutY="121.0" prefHeight="245.0" prefWidth="413.0" style="-fx-background-color: #efefef;">
+      <Label alignment="CENTER" layoutX="114.0" layoutY="14.0" prefHeight="45.0" prefWidth="95.0" text="Question 2" textFill="#fdd835">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="55.0" prefHeight="39.0" prefWidth="389.0" text="Toutes les classes héritent de la classe" />
+      <JFXCheckBox layoutX="79.0" layoutY="114.0" text="Main" />
+      <JFXCheckBox layoutX="79.0" layoutY="157.0" text="Object" />
+      <JFXCheckBox layoutX="79.0" layoutY="196.0" prefHeight="18.0" prefWidth="212.0" text="AWT" />
+   </AnchorPane>
+   <AnchorPane fx:id="n1q1" layoutX="180.0" layoutY="131.0" prefHeight="245.0" prefWidth="422.0" style="-fx-background-color: #efefef;">
+      <Label alignment="CENTER" layoutX="114.0" layoutY="14.0" prefHeight="45.0" prefWidth="95.0" text="Question 1" textFill="#fdd835">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="55.0" prefHeight="39.0" prefWidth="389.0" text="JAVA est un langage " />
+      <JFXCheckBox fx:id="correct" layoutX="79.0" layoutY="114.0" text="Compilé" />
+      <JFXCheckBox layoutX="79.0" layoutY="157.0" text="Interprété" />
+      <JFXCheckBox layoutX="79.0" layoutY="196.0" prefHeight="18.0" prefWidth="212.0" text="Compilé etinterpreté" />
+   </AnchorPane>
+   <JFXButton fx:id="q1" layoutX="602.0" layoutY="131.0" onAction="#q1" style="-fx-background-color: #cabf45;" text="Question 1" textFill="WHITE" />
+   <JFXButton fx:id="q2" layoutX="602.0" layoutY="161.0" onAction="#q2" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #cabf45;" text="Question 2" textFill="WHITE" />
+   <JFXButton fx:id="q3" layoutX="602.0" layoutY="192.0" onAction="#q3" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #cabf45;" text="Question 3" textFill="WHITE" />
+   <JFXButton fx:id="q4" layoutX="602.0" layoutY="224.0" onAction="#q4" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #cabf45;" text="Question 4" textFill="WHITE" />
+   <JFXButton fx:id="q5" layoutX="602.0" layoutY="254.0" onAction="#q5" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #cabf45;" text="Question 5" textFill="WHITE" />
+</AnchorPane>
